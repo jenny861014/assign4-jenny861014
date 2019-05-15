@@ -251,7 +251,7 @@ void draw() {
 
 		// If player is not moving, we have to decide what player has to do next
 		if(playerMoveTimer == 0){
-      if(playerRow>=0 && playerRow<23 && soilHealth[playerCol][playerRow+1] == 0){
+      if(playerRow>=-1 && playerRow<23 && soilHealth[playerCol][playerRow+1] == 0){
             playerMoveDirection = DOWN;
             playerMoveTimer = playerMoveDuration;
           }else{
